@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.5.16",
+    "@astrojs/check": "^0.5.10",
+    "typescript": "^5.4.4"
+  }
+}
