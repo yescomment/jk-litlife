@@ -1,14 +1,23 @@
 html {
   font-size: 24px;
+  --color-bg: #b9e3c6;
+  --color-text: #c51b54;
 }
 
 body {
-  color: #d81e5b;
-  background-color: #b9e3c6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
   font-family: 'Fern Web', system-ui, serif;
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
+}
+
+.infobox {
+  /* invert colors */
+  color: var(--color-bg);
+  background-color: var(--color-text);
+  display: inline-block;
 }
 
 img {
@@ -242,7 +251,7 @@ figcaption.date {
 a {
   color: inherit;
   font-weight: 600;
-  text-decoration-color: #bf2a3d;
+  text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
 }
 
@@ -260,8 +269,8 @@ a.secret:hover {
 }
 
 .special {
-  color: #bf2a3d !important;
-  text-decoration-color: #bf2a3d;
+  color: #a21645 !important;
+  text-decoration-color: #a21645;
 }
 
 #events {
