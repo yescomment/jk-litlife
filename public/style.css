@@ -14,8 +14,19 @@ body {
 }
 
 .button {
+  display: block;
+  width: fit-content;
+  margin-block: 1rem;
+  margin-inline: 0;
+  padding: 0.5rem;
   color: var(--color-bg);
   background-color: var(--color-text);
+  transition: border-radius 0.5s;
+  border-radius: 0;
+}
+
+.button:hover {
+  border-radius: 1rem;
 }
 
 .infobox {
