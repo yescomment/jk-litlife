@@ -69,8 +69,8 @@ footer aside {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: auto;
-  padding: 0.3em 0;
+  margin: auto 2rem;
+  padding: 0.4em 0;
   border: 3px var(--color-text);
   border-top-style: solid;
   border-bottom-style: solid;
@@ -97,7 +97,7 @@ footer .logo {
 }
 
 h1 {
-  font-size: min(8rem, 20vw);
+  font-size: min(7rem, 20vw);
   font-family: 'Whirly Birdie', Impact, sans-serif;
   font-weight: normal;
   font-variation-settings: 'wght' 53, 'wdth' 50, 'ital' 14;
