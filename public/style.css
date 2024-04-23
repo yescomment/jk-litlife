@@ -16,10 +16,10 @@ body {
 }
 
 .button {
-  display: block;
+  display: block;;
   width: fit-content;
   margin-block: 1rem;
-  margin-inline: 0;
+  margin-inline: auto;
   padding: 0.5rem;
   color: var(--color-bg);
   background-color: var(--color-text);
