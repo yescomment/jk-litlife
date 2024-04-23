@@ -16,9 +16,19 @@ const { src, alt, caption } = Astro.props
 	.polaroid {
 		box-sizing: border-box;
 		border: 1rem solid #dedcef;
-		width: 100%;
+		width: 50%;
+		display: block;
+		margin: auto;
 		height: auto;
 		border-radius: 5px;
 		box-shadow: 0 0 10px 2px grey;
+
+		&:nth-of-type(even) {
+			rotate: 3deg;
+		}
+
+		&:nth-of-type(odd) {
+			rotate: -2deg;
+		}
 	}
 </style>
