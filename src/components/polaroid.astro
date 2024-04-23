@@ -1,0 +1,23 @@
+---
+interface Props {
+	src: string;
+	alt: string;
+	caption?: string;
+}
+
+import { Image } from 'astro:assets'
+
+const { src, alt, caption } = Astro.props
+---
+<Image class="polaroid" src={src} alt={alt}/>
+
+<style lang="scss">
+	.polaroid {
+		box-sizing: border-box;
+		border: 1rem solid #dedcef;
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+		box-shadow: 0 0 10px 2px grey;
+	}
+</style>

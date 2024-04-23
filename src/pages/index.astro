@@ -1,3 +1,9 @@
+---
+import Polaroid from '@components/polaroid.astro'
+
+import imgJeffLuxe from '@photos/jk_luxembourg.jpg'
+import imgJeffNice from '@photos/jk_trianon.jpg'
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +31,9 @@
 
   <section>
     <h2>Meet Jeff Kraft, your <em>Professeur & Gentil Organisateur</em></h2>
+    <Polaroid src={imgJeffLuxe} alt="Photo of Jeff Kratz, falling asleep in Luxembourg" />
     <p>“PGO” is a fun way of saying I’m an easygoing teacher and guide. I’ve lived in, worked in and traveled to France more than 30 times. I have been teaching college-level French language and culture for over a decade. I’m also the author of <a href="https://www.amazon.com/Literary-Paris-Jeffrey-Kraft/dp/0823028305"><em>Literary Paris</em></a>, a book of photography and travel essays.</p>
+    <Polaroid src={imgJeffNice} alt="Photo of Jeff Kratz, standing in a garden" />
     <p>LitLifeFrance is my next chapter: sharing my love and expertise to small groups online, then traveling to France together for unforgettable, one-week <em>séjours</em> (journeys).</p>
   </section>
 
