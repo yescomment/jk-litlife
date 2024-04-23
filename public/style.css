@@ -1,7 +1,7 @@
 html {
   font-size: 24px;
-  --color-bg-gradient: linear-gradient(160deg, rgba(223,235,139,1) 0%, rgba(208,222,72,1) 78%, rgba(143,216,231,1) 100%);
-  --color-bg: rgb(223,235,139);
+  --color-bg: rgb(241, 245, 216);
+  --color-bg-gradient: linear-gradient(160deg, rgb(224, 231, 159), rgb(239, 242, 217) 12.61%, var(--color-bg));
   --color-text: #c51b54;
 }
 
