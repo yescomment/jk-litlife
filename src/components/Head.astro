@@ -1,0 +1,22 @@
+---
+interface Props {
+	pageSubtitle?: string;
+	pageDescription?: string;
+}
+
+const {
+	pageSubtitle,
+	pageDescription = 'Widen your perspective with a live online French course, then travel to Paris with your classmates. All with your Gentil-Organisateur, Jeff Kraft.'
+} = Astro.props
+---
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LitLifeFrance{pageSubtitle && `: ${pageSubtitle}`}</title>
+  <meta name="description" content={pageDescription} />
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/typography.css">
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <!-- usefathom.com/ref/VIGUPS -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="XXBGZCKK" defer></script>
+</head>
