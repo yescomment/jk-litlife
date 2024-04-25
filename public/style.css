@@ -250,7 +250,7 @@ figcaption.date {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 1020px) {
   header,
   footer {
     flex-direction: column;
@@ -258,6 +258,7 @@ figcaption.date {
 
   header aside,
   footer aside {
+    margin: 0;
     box-sizing: border-box;
     width: 100%;
     padding: 1em 3em;
