@@ -1,14 +1,12 @@
 html {
   font-size: 24px;
-  --color-bg: rgb(241, 245, 216);
-  --color-bg-gradient: linear-gradient(160deg, rgb(224, 231, 159), rgb(239, 242, 217) 12.61%, var(--color-bg));
+  --color-bg: #f1f5d8;
   --color-text: #c51b54;
 }
 
 body {
   color: var(--color-text);
   background-color: var(--color-bg);
-  background: var(--color-bg-gradient);
   font-family: 'Fern Web', system-ui, serif;
   margin: 0;
   width: 100vw;
