@@ -29,6 +29,10 @@ body {
   border-radius: 1rem;
 }
 
+.center {
+  text-align: center;
+}
+
 .infobox {
   width: fit-content;
   font-size: 0.8rem;

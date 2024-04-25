@@ -2,8 +2,10 @@
 import Polaroid from '@components/polaroid.astro'
 import Head from '@components/Head.astro'
 
-import imgJeffLuxe from '@photos/jk_luxembourg.jpg'
-import imgJeffNice from '@photos/jk_trianon.jpg'
+import imgJeffHead from '@photos/LitLife_8744_KraftTrianon.jpeg'
+import imgPontNeuf from '@photos/Pont Neuf Dawn Oct2023.jpeg'
+import imgBlueNoDa from '@photos/LitLife_6657_Blue Notre Dame.jpeg'
+import imgBaguette from '@photos/LitLife_8107_Baguette.jpeg'
 ---
 <!DOCTYPE html>
 <html>
@@ -19,15 +21,17 @@ import imgJeffNice from '@photos/jk_trianon.jpg'
 
   <section class="intro">
     <p><strong>LitLifeFrance</strong> is an online community celebrating French culture, language and literature in a live online minicourse format, taught in English, before you actually explore France in new ways as a small group—with your professor as your in-person guide.</p>
+    <Polaroid src={imgPontNeuf} alt="Pont Neuf at Dawn, photographed by Jeff Kraft October 2023" />
+    <Polaroid src={imgBlueNoDa} alt="Notre Dame & sreetlamp cast in blue by bright sky, photographed by Jeff Kraft" />
+    <Polaroid src={imgBaguette} alt="A buttered baguette and cappucinos for two on a table, photographed by Jeff Kraft" />
     <a class="button" href="https://blog.litlifefrance.com">Sign up for a weekly dose of all things French <em>ici</em></a></p>
   </section>
 
   <section>
     <h2>Meet Jeff Kraft, your <em>Professeur & Gentil Organisateur</em></h2>
     <a class="button" href="/biography">Read full bio</a>
-    <Polaroid src={imgJeffLuxe} alt="Photo of Jeff Kratz, falling asleep in Luxembourg" />
     <p>“PGO” is a fun way of saying I’m an easygoing teacher and guide. I’ve lived in, worked in and traveled to France more than 30 times. I have been teaching college-level French language and culture for over a decade. I’m also the author of <a href="https://www.amazon.com/Literary-Paris-Jeffrey-Kraft/dp/0823028305"><em>Literary Paris</em></a>, a book of photography and travel essays.</p>
-    <Polaroid src={imgJeffNice} alt="Photo of Jeff Kratz, standing in a garden" />
+    <Polaroid src={imgJeffHead} alt="Photo of Jeff Kratz, standing in a garden" />
     <p>LitLifeFrance is my next chapter: sharing my love and expertise to small groups online, then traveling to France together for unforgettable, one-week <em>séjours</em> (journeys).</p>
   </section>
 
@@ -57,6 +61,10 @@ import imgJeffNice from '@photos/jk_trianon.jpg'
     <p>Each journey will be about 50/50 planned vs. free time, and tailored to each group’s interests. I start by orienting you to our neighborhood, so you feel as if you live there. Then we’ll meet most days for one overall 2-6 hour walking excursion – a non-touristy blend of museums, gardens, theater, or shopping using public transportation—related to what we’ve studied and discussed. It’s an immersive, authentic journey.</p>
     <p>$2000 pp includes 2 mini courses, private consultations prior to your travel, custom itinerary , dedicated on-the-ground guide, and a coffee-table book of your experience post-trip. You save by booking your own airfare and accommodations. On the ground, you’ll also buy most meals and your local travel.</p>
     <p>LitLifeFrance lets you cultivate your love of and in-depth knowledge of all things French. <em>With</em> a trusted guide and a community to support you. And <em>without</em> having to speak the language—unless you want to!</p>
+  </section>
+  <section>
+    <a class="button" href="https://blog.litlifefrance.com">Sign up for a weekly dose of all things French</a></p>
+    <p class="center"><small>All photography by Jeff Kraft</small></p>
   </section>
 </body>
 </html>
