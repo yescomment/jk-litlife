@@ -21,12 +21,14 @@ body {
   padding: 0.5rem;
   color: var(--color-bg);
   background-color: var(--color-text);
-  transition: border-radius 0.5s;
+  transition: 0.5s;
   border-radius: 0;
+  box-shadow: 0 0 10px 2px grey;;
 }
 
 .button:hover {
   border-radius: 1rem;
+  box-shadow: 0 0 10px 2px var(--color-text);
 }
 
 .center {
