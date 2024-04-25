@@ -47,6 +47,15 @@ body {
   background-color: var(--color-text);
 }
 
+summary {
+  cursor: pointer;
+  margin-block: 1rem;
+
+  & ~ * {
+    margin-left: 1rem;
+  }
+}
+
 img {
   max-width: 100%;
 }
