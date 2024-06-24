@@ -1,4 +1,6 @@
 ---
+import Page from '@layouts/Page.astro'
+
 import Polaroid from '@components/polaroid.astro'
 import Head from '@components/Head.astro'
 
@@ -6,16 +8,10 @@ import imgJeffHeadshot from '@photos/BLOGJKPariswindow1023.jpeg'
 import imgTrees from '@photos/IMG_9822small.jpg'
 import imgArch from '@photos/IMG_9815small.jpg'
 ---
-<!DOCTYPE html>
-<html>
-<Head
-  pageSubtitle = "About Your Professeur & Gentil Organisateur"
+<Page
+  title = 'Paris is my&nbsp;ocean'
+  browserTitle = 'About Your Professeur & Gentil Organisateur'
 />
-<body>
-  <header>
-    <h1>Paris is my&nbsp;ocean</h1>
-  </header>
-
   <section>
     <h2>About Jeff Kraft</h2>
     <Polaroid src={imgJeffHeadshot} alt="Photo of Jeff Kratz, framed by a breezy window" />
@@ -29,8 +25,4 @@ import imgArch from '@photos/IMG_9815small.jpg'
   </section>
 
   <a class="button" href="/">← Head back home</a>
-
-</body>
-</html>
-
-<!-- 𝓙𝓪𝓬𝓸𝓫 𝓕𝓸𝓻𝓭, 2024 -->
+</Page>

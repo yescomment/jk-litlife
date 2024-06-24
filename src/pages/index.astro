@@ -1,22 +1,17 @@
 ---
+import Page from '@layouts/Page.astro'
+
 import Polaroid from '@components/polaroid.astro'
-import Head from '@components/Head.astro'
 
 import imgJeffHead from '@photos/LitLife_8744_KraftTrianon.jpeg'
 import imgPontNeuf from '@photos/PontNeufDawnOct2023.jpeg'
 import imgBlueNoDa from '@photos/LitLife_6657_BlueNotreDame.jpeg'
 import imgBaguette from '@photos/LitLife_8107_Baguette.jpeg'
 ---
-<!DOCTYPE html>
-<html>
-<Head
-  pageSubtitle = "Learn & Travel"
-/>
-<body>
-  <header>
-    <h1>Enlightening Journeys to France</h1>
-  </header>
-
+<Page
+  title = 'Enlightening Journeys to France'
+  browserTitle = 'Learn, Travel, Enjoy'
+>
   <section class="intro">
     <h2>Learn. Travel. <strong>Enjoy.</strong></h2>
     <p><strong>LitLifeFrance</strong> is an online community celebrating French culture, language and literature. Get free insights, articles and recommendations about all things French. Enjoy live mini-courses, taught in English. And travel to France for tailored, one-week journeys with your teacher as a guide.</p>
@@ -118,7 +113,4 @@ import imgBaguette from '@photos/LitLife_8107_Baguette.jpeg'
     <p class="center"><small>All photography by Jeff Kraft</small></p>
     <p class="center">❦</p>
   </section>
-</body>
-</html>
-
-<!-- 𝓙𝓪𝓬𝓸𝓫 𝓕𝓸𝓻𝓭, 2024 -->
+</Page>

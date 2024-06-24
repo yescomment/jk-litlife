@@ -1,0 +1,26 @@
+---
+import Head from '@components/Head.astro'
+import SiteNav from '@components/SiteNav.astro'
+
+interface Props {
+	title: string,
+	browserTitle?: string,
+}
+
+const {
+	title,
+	browserTitle
+} = Astro.props
+---
+<html>
+	<Head
+	  pageSubtitle = {browserTitle}
+	/>
+	<body>
+	  <header>
+	    <h1>{title}</h1>
+	  </header>
+	  <slot/>
+	</body>
+	<!-- 𝓙𝓪𝓬𝓸𝓫 𝓕𝓸𝓻𝓭, 2024 -->
+</html>
