@@ -6,7 +6,38 @@ const currentPath = Astro.url.pathname;
 import NavLink from '@components/NavLink.astro'
 ---
 <nav>
-  <NavLink href="/learn">The Courses</NavLink>
-  <NavLink href="/travel">The Trips</NavLink>
-  <NavLink href="/biography">Your Instructor</NavLink>
+  <section>
+    <NavLink href="/">Frontpage</NavLink>
+    <NavLink href="/learn">The Courses</NavLink>
+    <NavLink href="/travel">The Trips</NavLink>
+    <NavLink href="/biography">Your Instructor</NavLink>
+  </section>
+  <section>
+    <NavLink href="https://blog.litlifefrance.com">Travel Blog</NavLink>
+    <NavLink href="https://newsletter.litlifefrance.com">Quarterly Newsletter</NavLink>
+  </section>
 </nav>
+
+<style lang="scss">
+  nav {
+    font-variant-caps: all-small-caps;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    border: 3px var(--color-text);
+    border-top-style: solid;
+    border-bottom-style: solid;
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      gap: inherit;
+    }
+  }
+</style>

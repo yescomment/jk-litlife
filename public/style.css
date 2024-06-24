@@ -2,6 +2,7 @@ html {
   font-size: 24px;
   --color-bg: #f1f5d8;
   --color-text: #c51b54;
+  --color-accent: #649eec;
 }
 
 body {
@@ -62,23 +63,10 @@ img {
   max-width: 100%;
 }
 
-section,
-nav,
-header,
-footer {
+body {
   margin: auto;
   padding: 1em;
   max-width: 800px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-
-  border: 3px var(--color-text);
-  border-top-style: solid;
-  border-bottom-style: solid;
 }
 
 header,
