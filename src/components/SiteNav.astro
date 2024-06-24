@@ -1,0 +1,12 @@
+---
+interface Props {}
+
+const currentPath = Astro.url.pathname;
+
+import NavLink from '@components/NavLink.astro'
+---
+<nav>
+  <NavLink href="/learn">The Courses</NavLink>
+  <NavLink href="/travel">The Trips</NavLink>
+  <NavLink href="/biography">Your Instructor</NavLink>
+</nav>

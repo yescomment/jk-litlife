@@ -9,6 +9,8 @@ body {
   background-color: var(--color-bg);
   font-family: 'Fern Web', system-ui, serif;
   margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -61,11 +63,22 @@ img {
 }
 
 section,
+nav,
 header,
 footer {
   margin: auto;
   padding: 1em;
   max-width: 800px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  border: 3px var(--color-text);
+  border-top-style: solid;
+  border-bottom-style: solid;
 }
 
 header,
