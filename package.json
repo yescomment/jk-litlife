@@ -15,7 +15,6 @@
     "typescript": "^5.4.4"
   },
   "devDependencies": {
-    "@vercel/toolbar": "^0.1.15",
     "sass": "^1.75.0"
   }
 }
