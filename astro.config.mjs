@@ -8,7 +8,7 @@ if (process?.env?.SITE_URL) {
 } else if (process?.env?.VERCEL_PROJECT_PRODUCTION_URL) {
 	siteUrl = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
 } else if (process?.env?.VERCEL_URL) {
-	siteUrl = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+	siteUrl = `https://${process.env.VERCEL_URL}`
 }
 
 // https://astro.build/config
