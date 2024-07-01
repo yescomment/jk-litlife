@@ -20,6 +20,10 @@ console.log('siteUrl', siteUrl)
 export default defineConfig({
 	output: 'static',
 	site: siteUrl,
+	redirects: {
+    '/learn': '/courses',
+    '/biography': '/about'
+  },
 	adapter: vercel({
 		imageService: true,
 		devImageService: true,
