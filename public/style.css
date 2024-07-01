@@ -51,6 +51,7 @@ body {
 }
 
 summary {
+  font-weight: bold;
   cursor: pointer;
   margin-block: 1rem;
 
