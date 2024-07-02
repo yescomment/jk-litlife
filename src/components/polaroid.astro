@@ -3,13 +3,16 @@ interface Props {
 	src: any; // TODO: ??
 	alt: string;
 	caption?: string;
+	fullwidth?: boolean;
 }
 
 import { Image } from 'astro:assets'
 
-const { src, alt, caption } = Astro.props
+const { src, alt, caption, fullwidth = false } = Astro.props
+
+const classString = `polaroid ${fullwidth && ' fullwidth'}`
 ---
-<Image class="polaroid" src={src} alt={alt}/>
+<Image class={classString} src={src} alt={alt}/>
 {caption && <figcaption>{caption}</figcaption>}
 
 <style lang="scss">
@@ -22,6 +25,10 @@ const { src, alt, caption } = Astro.props
 		height: auto;
 		border-radius: 5px;
 		box-shadow: 0 0 10px 2px grey;
+
+		&.fullwidth {
+			width: 100%;
+		}
 
 		&:nth-of-type(even) {
 			rotate: 3deg;

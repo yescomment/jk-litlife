@@ -2,6 +2,8 @@
 import Page from '@layouts/Page.astro'
 
 import Polaroid from '@components/polaroid.astro'
+
+import imgLuxembourg from '@photos/LuxembourgGardenBannerOct2023.jpeg'
 ---
 <Page
   title = 'Guided Travels to France'
@@ -9,6 +11,7 @@ import Polaroid from '@components/polaroid.astro'
 >
 	<section>
     <p>Immerse yourself in France with your professor as your trusted (part-time) guide. You'll feel like a local on these weeklong journeys tailored to a group of 6 <small>(max!)</small> who've gotten to know each other during our online courses. You book and pay for your airfare and your preferred accommodation in the neighborhood (with help from your prof).</p>
+    <Polaroid fullwidth src={imgLuxembourg} alt="Photo of Jeff Kratz, standing in a garden" />
     <h2>Upcoming Trips</h2>
     <details>
       <summary class="infobox"><strong>Octobre 2024:</strong> Paris Saint-Germain</summary>
