@@ -1,0 +1,44 @@
+---
+interface Props {}
+
+const currentPath = Astro.url.pathname;
+
+import NavLink from '@components/NavLink.astro'
+---
+<nav>
+  <section>
+    <NavLink href="/">Frontpage</NavLink>
+    <NavLink href="/courses">Courses</NavLink>
+    <NavLink href="/travel">Travels</NavLink>
+    <NavLink href="/about">About</NavLink>
+  </section>
+  <section>
+    <NavLink href="https://blog.litlifefrance.com">Blog</NavLink>
+    <NavLink href="/newsletter">Newsletter</NavLink>
+    <!-- <NavLink href="https://shop.litlifefrance.com">Shop</NavLink> -->
+  </section>
+</nav>
+
+<style lang="scss">
+  nav {
+    font-variant-caps: all-small-caps;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    border: 3px var(--color-text);
+    border-top-style: solid;
+    border-bottom-style: solid;
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      gap: inherit;
+    }
+  }
+</style>

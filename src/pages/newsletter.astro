@@ -1,0 +1,26 @@
+---
+import Page from '@layouts/Page.astro'
+---
+<Page
+  title = 'Enlighting Email from France'
+  browserTitle = 'Quarterly Newsletter'
+/>
+  <section>
+    <h2>Quarterly Dispatches from LitLifeHQ</h2>
+    <p>Simple, quarterly(ish) emails about upcoming courses, trips, and other offerings from LitLifeFrance, written by hand & keybaord <a href="/biography">by Jeff</a>.
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/litlife"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://newsletter.litlifefrance.com', 'popupwindow')"
+      class="embeddable-buttondown-form"
+    >
+      <label for="bd-email">Enter your email</label>
+      <input type="email" name="email" id="bd-email" />
+      <input type="submit" value="Subscribe" />
+    </form>
+    <p>You can also <a href="https://newsletter.litlifefrance.com/archive/">browse the archive</a>, or <a href="https://newsletter.litlifefrance.com/rss">subscribe via RSS</a> if you’re into that.</a>
+  </section>
+
+  <a class="button" href="/">← Head back home</a>
+</Page>

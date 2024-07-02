@@ -2,6 +2,7 @@ html {
   font-size: 24px;
   --color-bg: #f1f5d8;
   --color-text: #c51b54;
+  --color-accent: #649eec;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
   background-color: var(--color-bg);
   font-family: 'Fern Web', system-ui, serif;
   margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -48,6 +51,7 @@ body {
 }
 
 summary {
+  font-weight: bold;
   cursor: pointer;
   margin-block: 1rem;
 
@@ -60,9 +64,7 @@ img {
   max-width: 100%;
 }
 
-section,
-header,
-footer {
+body {
   margin: auto;
   padding: 1em;
   max-width: 800px;

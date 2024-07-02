@@ -1,29 +1,32 @@
 ---
+import Page from '@layouts/Page.astro'
+
 import Polaroid from '@components/polaroid.astro'
-import Head from '@components/Head.astro'
 
 import imgJeffHead from '@photos/LitLife_8744_KraftTrianon.jpeg'
 import imgPontNeuf from '@photos/PontNeufDawnOct2023.jpeg'
 import imgBlueNoDa from '@photos/LitLife_6657_BlueNotreDame.jpeg'
 import imgBaguette from '@photos/LitLife_8107_Baguette.jpeg'
 ---
-<!DOCTYPE html>
-<html>
-<Head
-  pageSubtitle = "Learn & Travel"
-/>
-<body>
-  <header>
-    <h1>Enlightening Journeys to France</h1>
-  </header>
-
+<Page
+  title = 'Enlightening Journeys to France'
+  browserTitle = 'Learn, Travel, Enjoy'
+>
   <section class="intro">
-    <h2>Learn. Travel. <strong>Enjoy.</strong></h2>
-    <p><strong>LitLifeFrance</strong> is an online community celebrating French culture, language and literature. Get free insights, articles and recommendations about all things French. Enjoy live mini-courses, taught in English. And travel to France for tailored, one-week journeys with your teacher as a guide.</p>
+    <p><strong>LitLifeFrance</strong> is an online community celebrating French culture, language and literature. We meet online in courses and/or in person on one-week trips to France, all guided by an experienced college French professor.</p>
+    <div class="embed" style="aspect-ratio: 16/9;"><iframe src="https://player.vimeo.com/video/968148552?h=8481a6e8c5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Overview of LitLifeFrance"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <h2>Learn.</h2>
+    <p>Deepen your French knowledge with a fun, online mini-course exploring culture, language and literature. <strong>All courses taught in English.</strong></p>
+    <a href="/learn" class="button">Upcoming courses</a>
+    <h2>Travel.</h2>
+    <p>Enjoy a full week of authentic curated travel experiences in France as part of a small group with your teacher as a guide.</p>
+    <a href="/learn" class="button">Upcoming trips</a>
+    <h2><strong>Enjoy.</strong></h2>
+    <p>Join our community of Francofriends and stay in touch via blog and our quarterly enewsletter.</p>
+    <a href="https://blog.litlifefrance.com" class="button">Read the blog</a>
     <Polaroid src={imgPontNeuf} alt="Pont Neuf at Dawn, photographed by Jeff Kraft October 2023" />
     <Polaroid src={imgBlueNoDa} alt="Notre Dame & sreetlamp cast in blue by bright sky, photographed by Jeff Kraft" />
     <Polaroid src={imgBaguette} alt="A buttered baguette and cappucinos for two on a table, photographed by Jeff Kraft" />
-    <a class="button" href="https://blog.litlifefrance.com">Be Part of Our Community</a>
   </section>
 
   <section>
@@ -31,94 +34,22 @@ import imgBaguette from '@photos/LitLife_8107_Baguette.jpeg'
     <a class="button" href="/biography">Read full bio</a>
     <p>“PGO” is a fun way of saying I’m an easygoing teacher and guide. I’ve lived in, worked in and traveled to France more than 30 times. I have been teaching college-level French language and culture for over a decade. I’m also the author of <a href="https://www.amazon.com/Literary-Paris-Jeffrey-Kraft/dp/0823028305"><em>Literary Paris</em></a>, a book of photography and travel essays.</p>
     <Polaroid src={imgJeffHead} alt="Photo of Jeff Kratz, standing in a garden" />
-    <p>LitLifeFrance is my next chapter: sharing my love and expertise to small groups online, then traveling to France together for unforgettable, one-week <em>séjours</em> (journeys).</p>
+    <p>LitLifeFrance offers new ways for you to enjoy all things French. Enjoy 'insider access' to the culture and the country as you prepare to enjoy and celebrate unforgettable, one-week travel experiences!</p>
   </section>
 
   <section>
-    <h2>Learn More with a Mini Course</h2>
-    <details>
-      <summary class="infobox"><strong>June 2024:</strong> This Moveable Feast</summary>
-      <p><strong>Course Type:</strong> Literature</p>
-      <p><strong>Start Date:</strong> Tuesday, June 11, 8pm EDT</p>
-      <p><strong>Format:</strong> 4 one-hour Zoom sessions</p>
-      <p>Hemingway’s memoir sets the world to dreaming, and Paris of the 1920s springs to life in this slim volume published after the author’s 1961 death. We’ll read the book, but also take in movies, texts and articles that provide a richer background for fully savoring Ernest’s Paris in ways that “will stay with you, wherever you go.”</p>
-    </details>
-
-    <details>
-      <summary class="infobox"><strong>June 2024:</strong> Reviving Your High-School French</summary>
-      <p><strong>Course Type:</strong> Language</p>
-      <p><strong>Start Date:</strong> Saturday, July 6, noon EDT</p>
-      <p><strong>Format:</strong> 4 one-hour Zoom sessions</p>
-      <p>This course will give you the immersion tools, pragmatic vocabulary, and conversational practice you’ll need to dust off your French and move toward official A2 level language competency—whether greeting, wayfinding, or buying your daily baguette.</p>
-    </details>
-
-    <details>
-      <summary class="infobox"><strong>May 2024:</strong> Navigating Paris Transport</summary>
-      <p><strong>Course Type:</strong> Lifestyle</p>
-      <p><strong>Start Date:</strong> Friday, August 9, 8pm EDT</p>
-      <p><strong>Format:</strong> 4 one-hour Zoom sessions</p>
-      <p>Getting around Paris and France can be daunting, but not if you have some context and advance prep. We’ll discuss pragmatic aspects of trains and subways, buses and bikes, taxis and Ubers, planes and airports. You’ll emerge with apps and profiles set up and passes and tickets in hand – everything to travel with confidence.</p>
-    </details>
-
-    <p>$95 includes a reading list for a four-session course, professor-guided instructions, and writing guidance/editing of your reflections.</p>
-
-    <p class="center">Interested?</p>
-
-    <a class="button" href="mailto:jeff@litlifefrance.com?subject=Mini Course">Reserve Your Space in a Course with a quick email</a>
-
-    <p class="center">No commitment whatsoever.</p>
-
-    <p>Just tell me a bit about yourself and which course you’re eyeing. Prefer filling out a form? <a href="https://unitof.typeform.com/to/xUAD6RM2">You can do that too</a>.</p>
-
-    <h2>Travel With Me To France</h2>
-
-    <details>
-      <summary class="infobox"><strong>Octobre 2024:</strong> Paris Saint-Germain</summary>
-      <p><strong>Arrivée:</strong> samedi 5 octobre 2024</p>
-      <p><strong>Départ:</strong> samedi 12 octobre 2024</p>
-      <p>Join me in Paris’ glittering Left Bank district, for a full week of discoveries as trees turn full color and chestnuts fall. We’ll step off with an early Sunday morning river walk, past the restored Notre-Dame cathedral and into the Luxembourg Gardens through farmers markets en route to a fantastic lunch and neighborhood orientation. Monday will blend offbeat museums and select shopping as we widen our circle to include the Marais quarter. We keep our eyes on the skies for the best possible weather days for side trips to Monet’s Giverny gardens, exploding with dahlias and nasturtium, and Fontainebleau Palace, gilded by eight centuries of French history. We’ll catch buses, trains, even a few bike rides, while balancing an elegant Paris whirl of activity: a chef’s private dining room, unique bakeries and pastry shops, aperitifs with a local author talk, a night at the theater, a morning of flea market finds, plus visits to some of the best current exhibits at Paris museums.</p>
-      <p><a href="mailto:jeff@litlifefrance.com?subject=2024%20Paris%20trip">Indicate your interest with a quick email</a> to receive details and full itinerary.</p>
-    </details>
-
-    <details>
-      <summary class="infobox"><strong>Janvier 2025:</strong> Paris Marais</summary>
-      <p>A full week of insider travel, shopping and savoring. <em>More details to come.</em></p>
-      <p><a href="mailto:jeff@litlifefrance.com?subject=January%202025%20Paris%20trip">Indicate your interest with a quick email</a> to receive details and full itinerary.</p>
-    </details>
-
-    <details>
-      <summary class="infobox"><strong>Avril 2025:</strong> Paris Provence</summary>
-      <p>Take the train to explore inspiring places of France’s sunny south, from your base in Aix-en-Provence. <em>More details to come.</em></p>
-      <p><a href="mailto:jeff@litlifefrance.com?subject=April%202025%20Paris%20trip">Indicate your interest with a quick email</a> to receive details and full itinerary.</p>
-    </details>
-
-    <p>All séjours are seven days in duration, kick off on Sundays, and will be anchored in one neighborhood you’ll call home.</p>
-
-    <h4>Here are the three steps for how each journey works:</h4>
-    <ol>
-      <li>
-        <p><strong>I pick travel dates</strong>, a Paris neighborhood where everyone will stay, and set an overall itinerary based on what will be happening in the city in the season we go.</p>
-      </li>
-      <li>
-        <p><strong>You book and pay for your flights and accommodations</strong>, with an assist from me to ensure you’re within a 15-minute walk of my home base.</p>
-        <p>Then you participate in more fun reading and online discussions as mini-courses adapted from the French culture and language classes I teach college students.</p>
-      </li>
-      <li>
-        <p><strong>After getting to know one another online, we then meet up</strong> for a week of living and exploring, together and independently, in a fascinating place.</p>
-        <p>I always start by orienting you to our neighborhood, so you feel as if you live there. Then we meet up most days and explore. Avoiding cookie-cutter tour stops. Not in an exhausting way. (Think garden walks, flea markets, fun detours, great meals, insider shopping, nights at the theatre. Taking buses and subways like locals. Plus time on your own to explore, work out, sleep in, sip, savor.)</p>
-      </li>
-    </ol>
-    <p>Every journey will be unique, and designed to inspire and illuminate. And you won’t feel as if you’re part of a crowd: each travel ‘cohort’ will be no larger than 6 people. You’ll also have time to explore on your own: we’ll work toward a 50/50 balance of planned vs. free time, with an itinerary tailored to each group’s interests as well as what’s going on about town in the time period we’ll be visiting.</p>
-    <p>$3500 pp includes 2 mini courses, private consultations prior to your travel, custom itinerary, my on-the-ground guidance, a welcome dinner, farewell cocktail hour, and a colorful, coffee-table book of your experience post-trip. You save by booking your own airfare and accommodations. On the ground, you’ll also buy most meals and your local travel.</p>
-    <p class="center">¶</p>
-    <p>LitLifeFrance lets you cultivate your love of and in-depth knowledge of all things French. <em>With</em> a trusted guide and a community to support you. And <em>without</em> having to speak the language—unless you want to!</p>
-  </section>
-  <section>
-    <a class="button" href="https://blog.litlifefrance.com">Read & Subscribe to the LitLifeFrance Blog</a></p>
+    <a class="button" href="https://newsletter.litlifefrance.com">Subscribe to the <em>Mes Cinq</em> Quarterly Newsletter</a></p>
     <p class="center"><small>All photography by Jeff Kraft</small></p>
     <p class="center">❦</p>
   </section>
-</body>
-</html>
+</Page>
 
-<!-- 𝓙𝓪𝓬𝓸𝓫 𝓕𝓸𝓻𝓭, 2024 -->
+<style>
+  .embed {
+    border: 1rem solid #dedcef;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px grey;
+    rotate: -2deg;
+  }
+</style>

@@ -1,0 +1,26 @@
+---
+interface Props {
+	href: string
+}
+
+const {
+	href
+} = Astro.props
+
+const currentPath = Astro.url.pathname;
+---
+<a href={href} class={currentPath === href ? 'active' : ''}><slot/></a>
+
+<style lang="scss">
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&.active{
+			color: var(--color-accent);
+		}
+  }
+</style>
