@@ -29,6 +29,11 @@ body {
   box-shadow: 0 0 10px 2px grey;;
 }
 
+.button.special {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
 .button:hover {
   border-radius: 1rem;
   box-shadow: 0 0 10px 2px var(--color-text);
@@ -308,8 +313,8 @@ a.secret:hover {
 }
 
 .special {
-  color: #a21645 !important;
-  text-decoration-color: #a21645;
+  color: #a21645;
+  text-decoration-color: currentColor;
 }
 
 #events {
